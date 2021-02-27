@@ -55,7 +55,8 @@ How big is your resulting model checkpoint (mb)?
 ![Checkpoint Sizes](https://user-images.githubusercontent.com/64815523/109389648-30fd2700-78db-11eb-8d36-69642444b358.JPG)
 
 Remember the definition of a "step". How long did an average step take?
-Lookin at the tail nohup file, the average time taken for a step was 1.282 seconds. Extrapolating that to the elapsed time: each training step takes 1.282 seconds, then the total time taken to train is 100k x 1.181 = 128200 seconds or roughly, 35.6 hours. This is inline with our observed training time of 35 hrs, 37min shown in graph below.
+
+Looking at the tail nohup file, the average time taken for a step was 1.282 seconds. Extrapolating that to the elapsed time: each training step takes 1.282 seconds, then the total time taken to train is 100k x 1.181 = 128200 seconds or roughly, 35.6 hours. This is inline with our observed training time of 35 hrs, 37min shown in graph below.
 
 ![100k Score](https://user-images.githubusercontent.com/64815523/109389428-8edd3f00-78da-11eb-9085-0ac2e9f9c738.JPG)
 
