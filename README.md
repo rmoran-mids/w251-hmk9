@@ -25,7 +25,7 @@ Were you overfitting?
 
 Were your GPUs fully utilized?
 
-I believe they were based on the duration of the 100k steps. 
+- I believe they were based on the duration of the 100k steps. 
 
 Did you monitor network traffic (hint: apt install nmon ) ? Was network the bottleneck?
 
@@ -45,7 +45,7 @@ How big was your training set (mb)? How many training lines did it contain?
 
 What are the files that a TF checkpoint is comprised of?
 
-A TF model checkpoint consists of a few different files - index, meta and data. The .ckpt-meta contains the structure of the computation graph of the model. The .ckpt-data contains the values for all the variables, without the structure.
+- A TF model checkpoint consists of a few different files - index, meta and data. The .ckpt-meta contains the structure of the computation graph of the model. The .ckpt-data contains the values for all the variables, without the structure.
 
 ![Checkpoint](https://user-images.githubusercontent.com/64815523/109389256-d7e0c380-78d9-11eb-9c20-b92caf33b3d3.JPG)
 
@@ -56,13 +56,13 @@ How big is your resulting model checkpoint (mb)?
 
 Remember the definition of a "step". How long did an average step take?
 
-Looking at the tail nohup file, the average time taken for a step was 1.282 seconds. Extrapolating that to the elapsed time: each training step takes 1.282 seconds, then the total time taken to train is 100k x 1.181 = 128200 seconds or roughly, 35.6 hours. This is inline with our observed training time of 35 hrs, 37min shown in graph below.
+- Looking at the tail nohup file, the average time taken for a step was 1.282 seconds. Extrapolating that to the elapsed time: each training step takes 1.282 seconds, then the total time taken to train is 100k x 1.181 = 128200 seconds or roughly, 35.6 hours. This is inline with our observed training time of 35 hrs, 37min shown in graph below.
 
 ![100k Score](https://user-images.githubusercontent.com/64815523/109389428-8edd3f00-78da-11eb-9085-0ac2e9f9c738.JPG)
 
 How does that correlate with the observed network utilization between nodes?
 
-I think that as the network utilization increases between the nodes, the more data is being transferred and the more often parameter updates are happening.  If thats the case there should be faster step times.
+- I think that as the network utilization increases between the nodes, the more data is being transferred and the more often parameter updates are happening.  If thats the case there should be faster step times.
 
 Other Images:
 
