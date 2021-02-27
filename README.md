@@ -11,7 +11,7 @@ How long does it take to complete the training run? (hint: this session is on di
 
 Do you think your model is fully trained? How can you tell?
 
-- Yes, I it finished, if you tail the nohup file (set the max step size to 100k instead of 300k) - we see the bottom of the file explicitly indicates that training has finished.
+- Yes, It finished. If you tail the nohup file (set the max step size to 100k instead of 300k) - we see the bottom of the file explicitly indicates that training has finished.
  
 ![Nohup Tail](https://user-images.githubusercontent.com/64815523/109389194-7882b380-78d9-11eb-90ec-2d39721d366a.JPG)
 
