@@ -35,6 +35,7 @@ Take a look at the plot of the learning rate and then check the config file. Can
 
 - The learning rate has warm up od approx 8000 steps. During that timeit is linearly increasing the learning rate, see the associated in the graph. After that is starts decaying the learning rate after reaching that point.  "Warmup steps are just a few updates with low learning rate before / at the beginning of training. After this warmup, you use the regular learning rate (schedule) to train your model to convergence The idea that this helps your network to slowly adapt to the data intuitively makes sense. However, theoretically, the main reason for warmup steps is to allow adaptive optimisers (e.g. Adam, RMSProp, ...) to compute correct statistics of the gradients. Therefore, a warmup period makes little sense when training with plain SGD."  (Copied form Ref. https://datascience.stackexchange.com/questions/55991/in-the-context-of-deep-learning-what-is-training-warmup-steps)
 
+![100k Learning Rate](https://user-images.githubusercontent.com/64815523/109389707-80dbee00-78db-11eb-8a0c-57886a4d214e.JPG)
 
 How big was your training set (mb)? How many training lines did it contain?
 
@@ -63,7 +64,6 @@ How does that correlate with the observed network utilization between nodes?
 I think that as the network utilization increases between the nodes, the more data is being transferred and the more often parameter updates are happening.  If thats the case there should be faster step times.
 
 Other Images:
-![100k Learning Rate](https://user-images.githubusercontent.com/64815523/109389707-80dbee00-78db-11eb-8a0c-57886a4d214e.JPG)
 
 ![100k Score](https://user-images.githubusercontent.com/64815523/109389712-85080b80-78db-11eb-8b99-eef12d0b6b73.JPG)
 
