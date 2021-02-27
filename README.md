@@ -1,6 +1,6 @@
 # w251-hmk9 
 ## R Moran
-## Sprin '21 Tues 2p
+## Spring '21 Tues 2p
 
 Submission
 Please submit the nohup.out file along with screenshots of your Tensorboard indicating training progress (Blue score, eval loss) over time. Also, answer the following (simple) questions:
