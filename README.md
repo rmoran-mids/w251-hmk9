@@ -39,7 +39,7 @@ Take a look at the plot of the learning rate and then check the config file. Can
 
 How big was your training set (mb)? How many training lines did it contain?
 
-- There were 2 training files - train.de (size = 695 M, lines = 4562012) and train.en (size = 621 M, lines = 4562012)
+- There were 2 training files - train.de (size = 710 M, lines = 4562012) and train.en (size = 636 M, lines = 4562012)
 
 ![Size](https://user-images.githubusercontent.com/64815523/109389228-aa941580-78d9-11eb-8b37-675146f728f4.JPG)
 
